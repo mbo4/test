@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ошибка &ndash; Электронный журнал</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <style>body, html {
+            border: 0;
+            margin: 0;
+            padding: 0
+        }
+
+        article, aside, audio, canvas, caption, details, div, figure, footer, form, header, hgroup, iframe, img, mark, menu, nav, object, section, span, summary, table, tbody, td, tfoot, thead, tr, video {
+            border: 0;
+            margin: 0;
+            padding: 0
+        }
+
+        a, abbr, address, b, blockquote, code, dd, del, dfn, dl, dt, em, fieldset, h1, h2, h3, h4, h5, h6, hr, i, ins, label, legend, li, ol, p, pre, q, samp, small, strong, sub, sup, ul {
+            border: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            margin: 0;
+            padding: 0
+        }
+
+        article, aside, audio, canvas, figcaption, figure, figure img, footer, header, hgroup, nav, section, video {
+            display: block
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0
+        }
+
+        table caption, table td, table th {
+            vertical-align: middle
+        }
+
+        a img {
+            border: 0
+        }
+
+        :focus {
+            outline: 0
+        }
+
+        body {
+            padding: 0;
+            margin: 0
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+            display: block
+        }
+
+        audio, canvas, video {
+            display: inline-block
+        }
+
+        audio:not([controls]) {
+            display: none
+        }
+
+        html {
+            font-size: 100%;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%
+        }
+
+        a:focus {
+            outline: thin dotted #333;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px
+        }
+
+        a:active, a:hover {
+            outline: 0
+        }
+
+        sub, sup {
+            position: relative;
+            font-size: 75%;
+            vertical-align: baseline
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            border: 0;
+            -ms-interpolation-mode: bicubic
+        }
+
+        #map_canvas img, .google-maps img {
+            max-width: none
+        }
+
+        button, input, select, textarea {
+            font-size: 100%;
+            vertical-align: middle
+        }
+
+        button, input {
+            line-height: normal
+        }
+
+        button::-moz-focus-inner, input::-moz-focus-inner {
+            padding: 0;
+            border: 0
+        }
+
+        button, html input[type=button], input[type=reset], input[type=submit] {
+            -webkit-appearance: button;
+            cursor: pointer
+        }
+
+        button, input[type=button], input[type=checkbox], input[type=radio], input[type=reset], input[type=submit], label, select {
+            cursor: pointer
+        }
+
+        input[type=search] {
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            -webkit-appearance: textfield
+        }
+
+        input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        input[type=checkbox], input[type=radio] {
+            margin: 0 4px 0 0;
+            line-height: 1
+        }
+
+        textarea {
+            overflow: auto;
+            vertical-align: top
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0
+        }
+
+        li, ol, p, ul {
+            margin: 0;
+            padding: 0;
+            text-indent: 0
+        }
+
+        ol li {
+            margin-left: 20px
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAACpElEQVR42u3d0Y6iQBBG4WpsI9H3f1ETExIb2IsJm+xuBli6Jl0/nu9eg5yxdEyg0vP5nO2AcRzt/X5b3/dHHv6xhmFwPWfd0QdeLhczMyultD4nH+1wQDOzrutsHMfWr+GjVQW8Xq82TVPr1/DRqgKmlCylxBhtqCqg2ddnIWO0neqAOWebpsnm+dCXWVSqDsgYbas6oBljtCWXgDlnm+eZMdqAS8CUknVdxxhtwCWg2df/hIzRbSkl1+fLwzC4PRkBt5VSXD9q0tEfsxGD2whFGwQUR0BxBBRHQHEEFEdAcQQUR0BxBBRHQHEEFEdAcQQUR0BxBBRHQHEEFEdAcQQUR0BxBBRHQHEEFEdAcQQUR0BxBBRHQHG59QH87fV6/b4LVCTLFcj3+731ofwhXMCcs91ut9aH8Y9SSsjrH8ON0KjX2ZdSLOdwf+/xAka03Acn4mgn4A6lFOu6mKcq5lEFM01TyPFpRsBNyxeXiOPTjICbIo9PMwJumuc57Pg0I+CqZXzyDhQVfXyaEXBV9PFpRsBvLTfu4x0oyvumdD+FgN9Q2YtBwBUKezEIuEJhLwYBVyjc0J2AG6Lf0J2AG6LvxSDghuhjlIA7RB6jBNwh8l4MAu4QeS9GuIBRf8KKuhcj3E/t3nsVPBFwh8fj0foQpIQbofg/BBRHQHEEFEdAcQQUR0BxBBRHQHEEFEdAcQQUR0BxBBRHQHEEFEdAcQQUR0BxBBRHQHEEFEdAcQQUR0BxBBRHQHEEFEdAcXkYBpcnirpXIRrvvRi573uXJ4q6VyEa770YbiM06l6FaLwvXnUJGHmvwtm5BFS4s+1Zub0DGZ9tVAeMvlfh7KoDMj7bqj7zCjcGP7OqgAp7Fc6u6swzPturOvuMz/YOB1TZq3B2vwCo5+OL3ThsAwAAAABJRU5ErkJggg==);
+            font-family: "Helvetica Neue", Helvetica, Arial;
+            font-size: 16px;
+            line-height: 22px;
+            color: #333
+        }
+
+        .page {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 540px
+        }
+
+        .panel {
+            background: #fff;
+            border-radius: 20px;
+            position: absolute;
+            left: 50%;
+            width: 720px;
+            margin-left: -360px;
+            top: 42.5%;
+            height: 360px;
+            margin-top: -180px;
+            padding: 24px 54px;
+            -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, .05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, .05)
+        }
+
+        .panel .content {
+            width: 100%;
+            margin: 0 0 32px 0
+        }
+
+        .copyright {
+            position: absolute;
+            width: 100%;
+            height: 64px;
+            bottom: 0;
+            left: 0;
+            color: #aaa
+        }
+
+        .copyright, .copyright p {
+            font-size: 13px;
+            line-height: 18px
+        }
+
+        .copyright .content {
+            padding: 0 54px;
+            margin: 0 auto
+        }
+
+        .content {
+            width: 720px;
+            margin: 32px auto;
+            padding-right: 120px
+        }
+
+        .content + .content {
+            margin-top: 0
+        }
+
+        a {
+            color: #4784b2 !important;
+            border-bottom: 1px solid rgba(71, 132, 178, .25);
+            text-decoration: none !important
+        }
+
+        a:hover {
+            border-bottom-color: #4784b2;
+            text-decoration: none !important
+        }
+
+        h1 {
+            font-size: 48px;
+            line-height: 54px;
+            margin: 18px 0;
+            color: #a40800
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            margin: 12px 0
+        }
+
+        @media (max-width: 900px) {
+            body {
+                font-size: 14px;
+                line-height: 20px
+            }
+
+            h1 {
+                font-size: 24px;
+                line-height: 30px
+            }
+
+            .copyright, .panel {
+                position: static;
+                width: 100%;
+                height: auto;
+                margin: 64px auto;
+                border-radius: 0
+            }
+
+            .panel {
+                margin-bottom: 0
+            }
+
+            .copyright {
+                margin-top: 0
+            }
+
+            .copyright .content {
+                padding-left: 0;
+                padding-right: 0
+            }
+
+            .content, .panel .content {
+                width: 320px;
+                padding-right: 0;
+                margin-right: auto;
+                margin-left: auto
+            }
+        }</style>
+</head>
+<body>
+<div class="page">
+    <div class="panel">
+        <div class="content"><h1>Ошибка</h1>
+            <p>Страница не найдена. </p>
+        </div>
+        <div class="content">
+            <ul class="links">
+                                    <li><a href="javascript:window.history.back()">Вернуться назад</a></li>
+                                    <li><a href="https://support.eljur.ru/support?domain=mbo2&amp;login=&amp;email=&amp;role=anonymous&amp;region=%D0%9A%D1%80%D1%8B%D0%BC+%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0">Обратиться в службу поддержки</a></li>
+                                    <li><a href="">Вернуться на главную страницу</a></li>
+                            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="content"><p>&copy; АИС &laquo;Электронный журнал<&raquo;</p></div>
+    </div>
+</div>
+</body>
+</html>
